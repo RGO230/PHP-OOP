@@ -30,6 +30,3 @@ class Chicken extends Animal{
         
     }
 }
-$a=new Chicken;
-$a->getInitial();
-$a->addAnimal();
