@@ -2,7 +2,7 @@
 include_once 'animal.php';
 class Chicken extends Animal{
     private  $initial_chicken_arr = [];
-    public function getInitial()
+    public function __construct()
     {
         $this->initial_chicken_arr = range(1,20);
         foreach ( $this->initial_chicken_arr as $animal_id=>$animal){
@@ -30,6 +30,3 @@ class Chicken extends Animal{
         
     }
 }
-$a=new Chicken;
-$a->getInitial();
-$a->addAnimal();

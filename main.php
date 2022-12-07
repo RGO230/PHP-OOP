@@ -1,14 +1,6 @@
 <?php
-include 'cow.php';
-include 'chicken.php';
-$chicken = new Chicken;
-$cow = new Cow;
-
-$chicken->getInitial();
-$cow->getInitial();
-$chicken->harvest();
-$cow->harvest();
-$chicken->addAnimal();
-$cow->addAnimal();
-$chicken->harvest();
-$cow->harvest();
+include_once 'farm.php';
+$farm = new Farm(new Cow,new Chicken);
+$farm->getHarvest();
+$farm->addAnimals();
+$farm->getHarvest();
